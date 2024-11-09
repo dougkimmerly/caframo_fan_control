@@ -56,7 +56,7 @@ float readFanSpeed() {
     power = read_power_callback();
     if (power < 2.3) {fanState =  0;} 
       else if (power < 4) {fanState = 1;}
-      else if (power < 5) {fanState = 2;}
+      else if (power < 5.5) {fanState = 2;}
       else {fanState = 3;}
 
     return (fanState);
